@@ -1,0 +1,21 @@
+{
+  "cSpell.words": [
+    "Backlighting",
+    "Dont't",
+    "firebasestorage",
+    "googleusercontent",
+    "Hosam",
+    "Nerunsa",
+    "NEXTAUTH",
+    "onlineshop",
+    "Ooops",
+    "paymentintent",
+    "prismadb",
+    "tailwindcss"
+  ],
+  "editor.fontFamily": "'DejaVu Sans Mono', 'Monospace', monospace",
+  "editor.fontLigatures": true,
+  "prisma-smart-formatter.typescript.defaultFormatter": "esbenp.prettier-vscode",
+  "prisma-smart-formatter.typescriptreact.defaultFormatter": "esbenp.prettier-vscode",
+  "prisma-smart-formatter.prisma.defaultFormatter": "Prisma.prisma"
+}

@@ -1,0 +1,87 @@
+datasource db {
+    provider = "mongodb"
+    url      = env("DATABASE_URL")
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model Account {
+    id                String  @id @default(auto()) @map("_id") @db.ObjectId
+    user_id           String  @db.ObjectId
+    type              String
+    provider          String
+    providerAccountId String
+    refresh_token     String? @db.String
+    access_token      String? @db.String
+    expires_at        Int?
+    token_type        String?
+    scope             String?
+    id_token          String? @db.String
+    session_state     String?
+
+    user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+    @@unique([provider, providerAccountId])
+}
+
+model User {
+    id             String    @id @default(auto()) @map("_id") @db.ObjectId
+    name           String?
+    email          String?   @unique
+    emailVerified  DateTime?
+    hashedPassword String?
+    createdAt      DateTime  @default(now())
+    updateAt       DateTime  @updatedAt
+    role           Role      @default(USER)
+    image          String?
+    accounts       Account[]
+    orders         Order[]
+}
+
+model Order {
+    id              String            @id @default(auto()) @map("_id") @db.ObjectId
+    user_id         String            @db.ObjectId
+    amount          Float
+    currency        String
+    status          String
+    deliveryStatus  String?
+    createDate      DateTime          @default(now())
+    paymentIntentId String            @unique
+    products        CartProductType[]
+    address         Address?
+
+    user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+}
+
+type CartProductType {
+    id          String
+    name        String
+    description String
+    category    String
+    brand       String
+    selectedImg Image
+    quantity    Int
+    price       Int
+}
+
+type Image {
+    color     String
+    codeColor String
+    Image     String
+}
+
+type Address {
+    city        String
+    country     String
+    line1       String
+    line2       String?
+    postal_code String
+    state       String
+}
+
+enum Role {
+    USER
+    ADMIN
+}
