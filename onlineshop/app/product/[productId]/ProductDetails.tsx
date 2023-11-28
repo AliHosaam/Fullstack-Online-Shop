@@ -39,7 +39,7 @@ const ProductDetails: React.FC<ProductDetailsProp> = ({ product }) => {
     description: product.description,
     category: product.category,
     brand: product.brand,
-    selectedImg: { ...product.images[0] },
+    selectedImg: { ...product.image[0] },
     quantity: 1,
     price: product.price,
   });
@@ -135,7 +135,7 @@ const ProductDetails: React.FC<ProductDetailsProp> = ({ product }) => {
           <>
             {" "}
             <SetColor
-              images={product.images}
+              images={product.image}
               cartProduct={cartProduct}
               handleColorSelect={handleColorSelect}
             />

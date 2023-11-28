@@ -9,6 +9,8 @@ interface ListRatingProp {
 }
 
 const ListRating: React.FC<ListRatingProp> = ({ product }) => {
+  if (product?.reviews.length === 0) return null;
+
   return (
     <div>
       <Heading title="Product Review" />
@@ -16,7 +18,7 @@ const ListRating: React.FC<ListRatingProp> = ({ product }) => {
         {product.reviews?.map((review: any) => (
           <div key={review.id} className="max-w-[300px]">
             <div className="flex gap-2 items-center">
-              <Avatar />
+              <Avatar src={review?.user.image} />
               <div className="font-semibold">{review?.user.name}</div>
               <div className="font-light">
                 {moment(review.createdDate).fromNow()}

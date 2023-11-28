@@ -18,6 +18,9 @@ export async function getCurrentUser() {
       where: {
         email: session?.user?.email,
       },
+      include: {
+        orders: true,
+      },
     });
 
     if (!currentUser) return null;
@@ -28,7 +31,7 @@ export async function getCurrentUser() {
       updateAt: currentUser.updateAt.toISOString(),
       emailVerified: currentUser.emailVerified?.toISOString(),
     };
-  } catch (error: any) {
+  } catch (error) {
     return null;
   }
 }
