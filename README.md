@@ -108,7 +108,7 @@ autoprefixer
 
 tailwindcss
 
-Tailwind CSS is utilized for streamlined and responsive styling, ensuring a consistent and visually appealing appearance across various devices.
+
 
 
 
