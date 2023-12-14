@@ -4,109 +4,103 @@ Key Technologies and Packages:
 
 1. Authentication and Authorization:
 
-@auth/prisma-adapter
+A. @auth/prisma-adapter
 
-@next-auth/prisma-adapter
+B. @next-auth/prisma-adapter
 
-@types/bcrypt
+C. @types/bcrypt
 
-bcrypt
+D. bcrypt
 
-Secure user authentication and authorization are at the core of our platform, ensuring that your customers' data is protected at every step.
 
 2. Frontend Design:
 
-@emotion/react
+A. @emotion/react
 
-@emotion/styled
+B. @emotion/styled
 
-@mui/material
+C. @mui/material
 
-@mui/x-data-grid
+D. @mui/x-data-grid
 
-We prioritize a visually appealing and user-friendly interface with a seamless integration of Material-UI components and Emotion for styling, resulting in a modern and responsive design.
 
 3. Data Management:
 
-@prisma/client
+A. @prisma/client
 
-prisma
+B. prisma
 
-Leveraging Prisma for efficient and scalable database management, our platform ensures fast and reliable data access for a smooth user experience.
 
 4. Payment Processing:
 
-@stripe/react-stripe-js
+A. @stripe/react-stripe-js
 
-@stripe/stripe-js
+B. @stripe/stripe-js
 
-stripe
+C. stripe
 
-Enable secure and seamless transactions with Stripe, providing a trustworthy and PCI-compliant payment processing system.
 
 5. Frontend Framework:
 
-Next.js
+A. Next.js
 
-Our platform is built on the latest version of Next.js, offering a high-performance frontend framework for enhanced speed and SEO optimization.
 
 6. Additional Frontend Libraries:
 
-react
+A. react
 
-react-dom
+B. react-dom
 
-react-chartjs-2
+C. react-chartjs-2
 
-react-dropzone
+D. react-dropzone
 
-react-hook-form
+E. react-hook-form
 
-react-hot-toast
+F. react-hot-toast
 
-react-icons
+G. react-icons
 
-Harnessing the power of React and associated libraries, our platform delivers dynamic and interactive user interfaces with features like charts, file uploads, form handling, and more.
 
 7. Backend Development:
 
-micro
+A. micro
 
-node-fetch
+B. node-fetch
 
-Employing microservices architecture and Node.js for backend development, our platform ensures efficient server-side operations and seamless communication with external APIs.
 
 8. Development Tools:
 
-axios
+A. axios
 
-chart.js
+B. chart.js
 
-dotenv
+C. dotenv
 
-encoding
+D. encoding
 
-eslint
+E. eslint
 
-eslint-config-next
+F. eslint-config-next
 
-firebase
+G. firebase
 
-moment
+H. moment
 
-postcss
+I. postcss
 
-query-string
+J. query-string
 
-typescript
+K. typescript
 
-Equipped with a comprehensive set of development tools, we prioritize code quality, security, and scalability throughout the development lifecycle.
+L. Equipped with a comprehensive set of development tools, we prioritize code quality, security, and scalability throughout the development lifecycle.
+
 
 9. Styling:
 
-autoprefixer
+A. autoprefixer
 
-tailwindcss
+B. tailwindcss
 
 
 
