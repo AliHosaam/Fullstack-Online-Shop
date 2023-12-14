@@ -112,6 +112,8 @@ Tailwind CSS is utilized for streamlined and responsive styling, ensuring a cons
 
 
 
+
+
 Key Features:
 
 1. User Authentication and Authorization:
