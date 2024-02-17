@@ -36,8 +36,7 @@ Key Features:
     9. Order History and Account Management:
     Access your order history and manage your account details effortlessly, facilitating a personalized and convenient shopping experience.
 
-
-    Technologies Used:
+Technologies Used:
 
     @auth/prisma-adapter (^1.0.2)
     @emotion/react (^11.11.1)
