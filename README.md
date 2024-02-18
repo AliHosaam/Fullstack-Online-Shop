@@ -79,5 +79,7 @@ Technologies Used:
     tailwindcss (3.3.3)
     typescript (5.2.2)
 
+Screenshots:
 
+   ![Image 1](https://github.com/AliHosaam/Fullstack-Online-Shop/assets/137641254/959a4a25-3163-43f7-90d6-357eed3c3b00)
 
