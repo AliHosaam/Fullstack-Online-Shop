@@ -82,4 +82,5 @@ Technologies Used:
 Screenshots:
 
    ![Image 1](https://github.com/AliHosaam/Fullstack-Online-Shop/assets/137641254/959a4a25-3163-43f7-90d6-357eed3c3b00)
+   ![Image 2](https://github.com/AliHosaam/Fullstack-Online-Shop/assets/137641254/95e49316-4bc9-4395-b631-4fe7ce445cc7)
 
